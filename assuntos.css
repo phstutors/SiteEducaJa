@@ -1,0 +1,25 @@
+
+table, tr, td{
+    border: 2px solid black;
+    color:black;
+}
+legend{
+    position: relative;
+    left: 90px;
+}
+div.assuntos{
+    position: relative;
+    top: 250px;
+    left: 360px;
+}
+@media  screen and (max-width: 733px) {
+    div.assuntos{
+        position: absolute;
+        left: 10px;
+        top: 250px;
+    }
+    legend{
+        left:0px;
+        text-align: center;
+    }
+}

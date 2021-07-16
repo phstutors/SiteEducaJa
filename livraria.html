@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        img.livra{
+        width: 420px;
+        position: absolute;
+        top: 110px;
+        }
+        img.livra1{
+            width: 300px;
+            position: relative;
+            top: 10px;
+            left: 940px;
+        }
+        p.titulo{
+            font-family: 'Lobster', cursive;
+            font-size: 80px;
+            position:relative;
+            top: 155px;
+            left:420px;
+}
+.toast{
+        position:absolute;
+        left: 1110px; 
+        top: 150px;    
+        }
+@media  screen and (max-width: 733px){
+    img.livra1{
+        width: 140px;
+        position: relative;
+        left:310px;
+        top: 10px;
+    }
+    img.livra{
+        width: 180px;
+        left: 0px;
+        top:170px;
+    }
+    p.titulo{
+            font-family: 'Lobster', cursive;
+            font-size: 45px;
+            position:relative;
+            top: 0px;
+            left: 150px;
+            color:blueviolet;
+            text-shadow: 2px 1px purple;
+}
+.toast{
+        width:0;
+        height:0;
+}
+}
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand" href="livraria.html">LivrariaEducaJá!</a>
+          <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+              <button class="btn btn-outline-success" type="button"><a href="index.html" style="color:green;text-decoration:none;">Principais Livros</a></button>
+              <button class="btn btn-sm btn-outline-secondary" type="button"><a href="index.html" style="color:black;text-decoration:none;">Voltar ao Inicio</a></button>
+            </form>
+          </nav>
+      </nav>
+</nav>
+    <div class="libras">
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      
+        <hr class="s1">
+    </div>
+    
+    <div><p class="titulo">LivrariaEducaJá</p></div>
+    <div class="projeto">
+        <img src="Livraria1.jpg" class="livra">
+        <img src="Livraria.jpg" class="livra1">
+        <hr>
+    </div>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Matriculas Abertas!</strong> Clique <a class="span1" href="matricula.html">Aqui</a> Para se matricular.(Caso Você não for matriculado)
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+          Olá, ainda não é matriculado?.
+          <div class="mt-2 pt-2 border-top">
+            <button type="button" class="btn btn-primary btn-sm"><a href="matricula.html" style="color: white; text-decoration: none;">Matricula-se</a></button>
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast"><a href="index.html" style="color: white; text-decoration: none;">Inicio</a></button>
+          </div>
+        </div>
+      </div>
+    <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="ciencia.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Ciencia</h5>
+            <p class="card-text">CIÊNCIAS NATURAIS<br>
+                APRENDENDO COM O COTIDIANO<br>
+                ano 7</p>
+            <a href="Livros/ciencia.html" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ler/Baixar</a>
+
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Publicado em 2021</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="edu.jpg"Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Alfabetização e Letramento – Magda Becker</h5>
+            <p class="card-text">Alfabetização e Letramento<br>
+                Magda Becker Soares<br>
+                Antônio Augusto Gomes Batista</p>
+                <a href="Livros/alfabetizao.html"target="_blank"  class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ler/Baixar</a>
+          </div>
+ 
+          <div class="card-footer" value="matematica"name="matematica">
+            <small class="text-muted">Publicado em 2021</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="Imagens/matematica.jpg"Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Matemática 1º Ano Fundamental – BNCC</h5>
+            <p class="card-text">Matemática no 1º Ano do<br>
+                Ensino Fundamental na<br>
+                Perspectiva das Habilidades da<br>
+                BNCC e DRC</p>
+                <a href="Livros/matematica.html" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ler/Baixar</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Publicado em 2021</small>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <hr>
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src="ciencia.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Ciencia</h5>
+            <p class="card-text">CIÊNCIAS NATURAIS<br>
+                APRENDENDO COM O COTIDIANO<br>
+                ano 7</p>
+            <a href="Livros/ciencia.html" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ler/Baixar</a>
+
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Publicado em 2021</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="edu.jpg"Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Alfabetização e Letramento – Magda Becker</h5>
+            <p class="card-text">Alfabetização e Letramento<br>
+                Magda Becker Soares<br>
+                Antônio Augusto Gomes Batista</p>
+                <a href="Livros/alfabetizao.html" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ler/Baixar</a>
+          </div>
+ 
+          <div class="card-footer" value="matematica"name="matematica">
+            <small class="text-muted">Publicado em 2021</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="Imagens/matematica.jpg"Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Matemática 1º Ano Fundamental – BNCC</h5>
+            <p class="card-text">Matemática no 1º Ano do<br>
+                Ensino Fundamental na<br>
+                Perspectiva das Habilidades da<br>
+                BNCC e DRC</p>
+                <a href="Livros/matematica.html" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ler/Baixar</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Publicado em 2021</small>
+          </div>
+        </div>
+      </div>
+
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+
+        <div class="container pt-4">
+ 
+          <section class="mb-4">
+
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="fab fa-facebook-f"><img src="facebook.svg" style="width: 32px;"></i
+            ></a>
+      
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="light"
+              ><img src="twitter.svg" style="width: 32px;"><i class="fab fa-twitter"></i
+            ></a>
+      
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><img src="google.svg" style="width: 32px;"><i class="fab fa-google"></i
+            ></a>
+      
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><img src="instagram.svg" style="width: 32px;"><i class="fab fa-instagram"></i
+            ></a>
+      
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><img src="linkedin.svg" style="width: 32px;"><i class="fab fa-linkedin"></i
+            ></a>
+
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="#!"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><img src="github.svg" style="width: 32px;"><i class="fab fa-github"></i
+            ></a>
+          </section>
+        </div>
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">EducaçãoJá (PhsTutors)</a>
+        </div>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

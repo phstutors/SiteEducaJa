@@ -1,0 +1,91 @@
+@media  screen and (max-width: 1444px) {
+    body{
+        margin: 0;
+        background-color: white;
+        color: black;
+    }
+    #menu{
+        position: relative;
+        top: 10px;
+    }
+    #menu ul li{
+        display: inline-block;
+    }
+    #menu ul li a{
+        background-color: #1E90FF;
+        display: inline-block;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        left: 975px;
+        margin: 10px;
+        top: 15px;
+    }
+    #menu ul li a:hover{
+        color:red;
+    }
+    img{
+        width: 340px;
+        position: relative;
+        top: 30px;
+        left: 0px;
+    }
+    h1.titulo{
+        font-family: 'Lobster', cursive;
+        font-size: 55px;
+        position: absolute;
+        top: 130px;
+        left: 290px;
+    }
+    p.textocorpo{
+        font-family: 'Noto Serif', serif;
+        text-align: center;
+    }
+}
+@media  screen and (max-width: 733px) {
+    #menu{
+        position: relative;
+        top: 10px;
+    }
+    #menu ul li{
+        display: inline-block;
+    }
+    #menu ul li a{
+        background-color: #1E90FF;
+        display: inline-block;
+        padding: 8px;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        left: 190px;
+        margin: 6px;
+        top: 15px;
+        border-radius: 6px;
+    }
+    #menu ul li a:hover{
+        color:red;
+    }
+    img{
+        width: 180px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    h1.titulo{
+        font-family: 'Lobster', cursive;
+        font-size: 35px;
+        position: absolute;
+        top:70px;
+        left: 160px;
+    }
+    p.textocorpo{
+        font-family: 'Noto Serif', serif;
+        text-align: center;
+        font-size: 14px;
+    }
+    hr{
+        width: 100%;
+    }
+}
