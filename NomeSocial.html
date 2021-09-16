@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .toast-body{
+            position: absolute;
+            left: 890px;
+            top: 500px;
+        }
+        @media  screen and (max-width: 733px) {
+            .toast-body{
+            position: absolute;
+            left: 250px;
+            top: 560px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand h1 mb-0" href="index.html">EducaçãoJá</a>
+            <button class="navbar-toggler" type="buttom" data-toggle="collapse" data-target="#navbarSite">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="metodologia.html">Matérias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="matricula.html">Pré-Matricula</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="livraria.html">Livraria</a>
+                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ajuda.html">Ajuda</a>
+                        </li>
+                        
+                        
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                                Aulas
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="Horario6.html">6º ano</a>
+                              <a class="dropdown-item" href="horario7.html">7º ano</a>
+                              <a class="dropdown-item" href="horario8.html">8º ano</a>
+                              <a class="dropdown-item" href="horario9.html">9º ano</a>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <div class="toast-body">
+        Olá, ainda não é matriculado?.
+        <div class="mt-2 pt-2 border-top">
+          <button type="button" class="btn btn-primary btn-sm"><a href="matricula.html" style="color: white; text-decoration: none;">Matricula-se</a></button>
+          <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast"><a href="index.html" style="color: white; text-decoration: none;">Inicio</a></button>
+        </div>
+      </div>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        MEC (Resolução nº 1, DE 19 DE JANEIRO DE 2018). Se você é maior de 18 anos, poderá fazer a solicitação para o uso do nome social no ato da matrícula, ou mesmo no decorrer do ano letivo, sem a necessidade de autorização de nenhuma pessoa.</a>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <br>
+    <form>
+    <div class="row g-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Primiro Nome" aria-label="First name">
+        </div>
+
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Last name">
+        </div>
+      </div>
+      <br>
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Telefone:</label>
+          <div class="col-sm-10">
+            <input type="tel" class="form-control" id="inputPassword3">
+          </div>
+        </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Genero:</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+              <label class="form-check-label" for="gridRadios1">
+                Mulher Trans
+              </label>
+            </div>
+            
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Homem Trans
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" checked>
+              <label class="form-check-label" for="gridRadios3">
+                Outros.
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Serie:</option>
+            <option value="1">6º ano</option>
+            <option value="2">7º ano</option>
+            <option value="3">8º ano</option>
+            <option value="4">9º ano</option>
+          </select>
+        <div class="row mb-3">
+          <div class="col-sm-10 offset-sm-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Confirmo Meus Dados.
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <input class="btn btn-primary" type="reset" value="Reset">
+      </form>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

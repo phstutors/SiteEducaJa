@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        div.Formulario{
+            margin-top:40px;
+        }
+        hr{
+            margin-top:4px;
+        }
+        button#bt1{
+            position: relative;
+            left: 600px;
+        }
+        button#bt2{
+            position: relative;
+            left: 600px;
+        }
+        @media  screen and (max-width: 733px) {
+            button#bt1{
+            position: relative;
+            left:  190px;
+        }
+        button#bt2{
+            position: relative;
+            left:  190px;
+        }
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand h1 mb-0" href="index.html">EducaçãoJá</a>
+        <button class="navbar-toggler" type="buttom" data-toggle="collapse" data-target="#navbarSite">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSite">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="metodologia.html">Matérias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.html">Pré-Matricula</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="livraria.html">Livraria</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ajuda.html">Ajuda</a>
+                    </li>
+                    
+                    
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                            Aulas
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="Horario6.html">6º ano</a>
+                          <a class="dropdown-item" href="horario7.html">7º ano</a>
+                          <a class="dropdown-item" href="horario8.html">8º ano</a>
+                          <a class="dropdown-item" href="horario9.html">9º ano</a>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</nav>
+
+    <hr>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      Já é Matriculado. E quer usar seu <a style="color:#FF69B4;">Nome Social</a><strong><a class="span1" href="NomeSocial.html" style="color:#856404;" class="cliqueA"> Clique Aqui!</a></strong>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="Formulario">
+        <legend>Pré-Matricula EducaçãoJá!</legend>
+        <hr>
+        <form>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Primeiro Nome">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Sobrenome">
+                  </div>
+                </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Celular</label>
+                        <input type="cel" class="form-control" id="inputCel4" placeholder="Celular">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Endereço</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="12 Rua 25 de março...">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">Cidade:</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState">Estado</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Escolha:</option>
+                          <option>Alagoas (AL)</option>
+                          <option>Amapá (AP)</option>
+                          <option>Bahia (BA)</option>
+                          <option>Ceará (CE)</option>
+                          <option>Goiás (GO)</option>
+                          <option>Paraíba (PB)</option>
+                          <option>Paraná (PR)</option>
+                          <option>Pernambuco (PE)</option>
+                          <option>Rio de Janeiro (RJ)</option>
+                          <option>Rio Grande do Sul (RS)</option>
+                          <option>São Paulo (SP)</option>
+
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">CEP</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                    </div>
+                    </div>
+                    <div>
+                        <select class="custom-select custom-select-lg mb-3">
+                            <option selected>Qual Sua Serie:</option>
+                            <option value="1">6ºAno</option>
+                            <option value="2">7ºAno</option>
+                            <option value="3">8ºAno</option>
+                            <option value="3">9ºAno</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                            Confirmo Meus Dados
+                          </label>
+                        </div>
+                        <div>
+                        <button type="submit" class="btn btn-primary btn-lg" id="bt1">Enviar!</button>
+                        <button type="button" class="btn btn-secondary btn-lg" id="bt2"><a href="index.html" style="color:white; text-decoration: none;" >Voltar!</a></button>
+                        
+                        </div>
+              </form>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
